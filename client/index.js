@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   // Load the publishable key from the server. The publishable key
   // is set in your .env file.
-  const {publishableKey} = await fetch('/.netlify/functions/config').then((r) => r.json());
+  const {publishableKey} = await fetch('/api/config').then((r) => r.json());
   if (!publishableKey) {
     addMessage(
       'No publishable key returned from the server. Please check `.env` and try again'
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const {
     error: backendError,
     clientSecret
-  } = await fetch('/.netlify/functions/create-payment-intent').then(r => r.json());
+  } = await fetch('/api/create-payment-intent').then(r => r.json());
   if (backendError) {
     addMessage(backendError.message);
   }
