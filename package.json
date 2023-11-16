@@ -1,0 +1,22 @@
+{
+  "name": "accept-a-payment",
+  "version": "1.0.0",
+  "description": "_Learn how to securely accept payments online._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gverni-stripe/stripe-netlify-accept-a-paymnent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gverni-stripe/stripe-netlify-accept-a-paymnent/issues"
+  },
+  "homepage": "https://github.com/gverni-stripe/stripe-netlify-accept-a-paymnent#readme",
+  "dependencies": {
+    "stripe": "^14.2.0"
+  }
+}
